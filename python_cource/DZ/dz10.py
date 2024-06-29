@@ -9,7 +9,5 @@ data = pd.DataFrame({'whoAmI': lst})
 data['is_robot'] = (data['whoAmI'] == 'robot').astype(int)
 data['is_human'] = (data['whoAmI'] == 'human').astype(int)
 
-data = data.drop('whoAmI', axis=1)
-
 print(data.head(10))
 
